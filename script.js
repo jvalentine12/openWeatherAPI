@@ -10,9 +10,8 @@ $(document).ready(function(){
             var temperature= response.current.temp_f;
             var humidity= response.current.humidity;
             var windspeed= response.current.wind_mph;
-        $("#weather-results").append(function(){
+        $("#weather-results").append("<br>" + temperature + "<br>" + humidity + "<br>" + windspeed);
             
-        });
         });
     });
 });
